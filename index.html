@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <main>
+        <section aria-labelledby="form-title">
+            <h1 id="form-title">Create New Account</h1>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p>
+                        <label for="full-name">Full Name:</label>
+                        <input type="text" id="full-name" name="fullname" required area-required="true" autocomplete="name">
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required area-required="true" autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="birth-date">Birth Date:</label>
+                        <input type="date" id="birth-date" name="birth-date">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Account Security</legend>
+
+                    <p>
+                        <label for="user-password">Password:</label>
+                        <input type="password" id="user-password" name="password" required area-required="true" area-describedby="password-hint">
+                        <small id="password-hint">Password Must be Minimum 8 Characters Long</small>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Select Course or Plan</legend>
+
+                    <p>
+                        <label for="select-course">Select Course:</label>
+                        <select id="select-course" name="course">
+                            <option value="">Select A Course</option>
+                            <option value="frontend">Frontend Web Development</option>
+                            <option value="backend">Backend Web Development</option>
+                            <option value="fullstack">Full Stack MERN Web Development</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Gender</legend>
+
+                    <p>
+                        <input type="radio" id="gender-male" name="gender" value="male">
+                        <label for="gender-male">Male</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="gender-female" name="gender" value="female">
+                        <label for="gender-female">Female</label>
+                    </p>
+                </fieldset>
+                
+                <p>
+                    <input type="checkbox" id="terms-agree" name="terms" required area-required="true">
+                    <label for="terms-agree">I agree to the terms and conditions</label>
+                </p>
+                <p>
+                    <button type="submit">Register</button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
